@@ -1,6 +1,6 @@
 {
   "name": "reducer-generator-reducer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A redux reducer-generator which builds a redux-reducer from a redux-reducer.",
   "main": "dist/reducer-generator-reducer.js",
   "author": "Braden R. Napier",
@@ -23,6 +23,13 @@
     "redux-saga-process",
     "reducer-generator"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dash-OS/reducer-generator-reducer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Dash-OS/reducer-generator-reducer/issues"
+  },
   "devDependencies": {
     "app-root-dir": "^1.0.2",
     "babel-cli": "^6.24.1",
