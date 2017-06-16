@@ -1,4 +1,5 @@
 export default
-  ( initialState, reducer, pcontext ) => 
-    ( state = initialState, action, context ) =>
-      reducer(state, action, { ...pcontext, ...context })
+  function createReducerReducer( initialState, reducer, ...initialArgs ) {
+    return ( state = initialState, action, ...reducerArgs ) =>
+      reducer(state, action, ...initialArgs, ...reducerArgs)
+  }

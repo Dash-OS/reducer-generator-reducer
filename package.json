@@ -1,6 +1,6 @@
 {
   "name": "reducer-generator-reducer",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A redux reducer-generator which builds a redux-reducer from a redux-reducer.",
   "main": "dist/reducer-generator-reducer.js",
   "author": "Braden R. Napier",

@@ -2,7 +2,8 @@
 
 A `reducer-generator` which builds a reducer that reduces a reducer.  In most 
 cases this is not useful.  It is, however, useful for libraries that are building 
-reducers from various object types.
+reducers from various object types as it allows us to inject arguments into the 
+reduction chain.
 
 ### Installation
 
@@ -21,7 +22,8 @@ npm install --save reducer-generator-reducer
 ```js
 import createReducerReducer from 'reducer-generator-reducer'
 
-const system = createReducerReducer({ /* initial state */ },
+const system = createReducerReducer(
+  { /* initial state */ },
   (state, action) => {
     switch(action.type) {
       case 'SYSTEM_ONLINE': {
@@ -38,5 +40,7 @@ const system = createReducerReducer({ /* initial state */ },
       }
     }
     return state
-  })
+  }, 
+  /* You may pass extra args that will be passed to the reducer(s) */ 
+)
 ```
